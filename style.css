@@ -9,67 +9,99 @@ https://coolors.co/ffcdb2-ffb4a2-e5989b-b5838d-6d6875
 
 /* Global styles 
 ------------------------------------*/
+html {
+  box-sizing: border-box;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
 body {
-    /*background: lightblue;*/
-    font-family: "Open Sans";
-    font-weight:normal;
-  }
-  html {
-    box-sizing: border-box;
-  }
-  *,
-  *:before,
-  *:after {
-    box-sizing: inherit;
-  }
-  h1 {
-    /* font-family: 'Roboto Condensed', sans-serif; */
-    font-family: "Fjalla One";
-    font-size:35px;
-    font-weight:600;
-  }
-  h2 {
-    font-family: 'Open Sans Condensed', sans-serif;
-    font-size:25px;
-    font-weight:600;
-  }
-  /* Header & Footer 
-  ------------------------------------*/
-  header {
-    /*   background-color:#ffcdb2; */
-    /*OR*/
-    background-color: #F8F9FA;
-    padding: 20px auto;
-  }
-  footer {
-    /*   background-color:#6d6875; */
-    /*OR*/
-    background-color: #6C757D;
-  }
-  
-  /* Work Experience
-  ------------------------------------*/
-  .work_experience_color {
-    /*     background-color:#ffb4a2; */
-    /*OR*/
-    background-color: #DEE2E6;
-  }
-  
-  /* Education
-  ------------------------------------*/
-  .education_section_color {
-    /*     background-color:#e5989b; */
-    /*OR*/
-    background-color: #CED4DA;
-  }
-  .sumary_of_skill {
-    /*   background-color:#b5838d; */
-    /*   OR */
-    background-color: #ADB5BD;
-  }
-  
-  .icon_style {
-    font-size: 24px;
-  }
-  
-  
+  /*background: lightblue;*/
+  font-family: "Open Sans";
+  font-weight:normal;
+  margin:0;
+}
+
+h1 {
+  /* font-family: 'Roboto Condensed', sans-serif; */
+  font-family: "Fjalla One";
+  font-size:35px;
+  font-weight:600;
+  margin: 0;
+}
+h2 {
+  font-family: 'Open Sans Condensed', sans-serif;
+  font-size:25px;
+  font-weight:600;
+  margin: 0;
+}
+.content-wrap{
+/*   width: 950px;  */
+/*   To make the content wrapper flexible use max-width */
+  max-width: 950px;
+  margin: 0 auto; 
+  /* by adding padding small difference in the amount of space between the top of the wrapper and the bottom*/
+  padding: 50px;
+  overflow:hidden;
+}
+
+
+
+
+
+
+
+/* Header & Footer 
+------------------------------------*/
+header {
+  /*   background-color:#ffcdb2; */
+  /*OR*/
+  background-color: #F8F9FA;
+}
+.profile-img{
+  width: 300px;
+  border-radius:50%;
+  float: left;
+  margin-right: 30px;
+}
+
+footer {
+  /*   background-color:#6d6875; */
+  /*OR*/
+  background-color: #6C757D;
+    text-align: center;
+}
+
+.contact-info a{
+/*   given space between icons */
+  padding: 10px; 
+/*   choose the value of inline-block, because still want these elements to align side by side */
+  display: inline-block;
+  font-size: 24px;
+  color:#f1faee; 
+}
+
+/* Work Experience
+------------------------------------*/
+.work_experience_color {
+  /*     background-color:#ffb4a2; */
+  /*OR*/
+  background-color: #DEE2E6;
+}
+
+/* Education
+------------------------------------*/
+.education_section_color {
+  /*     background-color:#e5989b; */
+  /*OR*/
+  background-color: #CED4DA;
+}
+/* .sumary_of_skill {
+  /*   background-color:#b5838d; */
+  /*   OR */
+/*   background-color: #ADB5BD; */
+/*} */
+
+
+
