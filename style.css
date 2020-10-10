@@ -11,16 +11,18 @@ https://coolors.co/ffcdb2-ffb4a2-e5989b-b5838d-6d6875
 ------------------------------------*/
 html {
   box-sizing: border-box;
+/*   background:green; */
 }
 *, *:before, *:after {
   box-sizing: inherit;
 }
 
 body {
-  /*background: lightblue;*/
+/*   background: lightblue; */
   font-family: "Open Sans";
   font-weight:normal;
-  margin:0;
+/*   padding-left: 3% ;
+  padding-right:3%; */
 }
 
 h1 {
@@ -46,10 +48,45 @@ h2 {
   overflow:hidden;
 }
 
+.column-narrow{
+  width: 30%; 
+  float : left; 
+  padding-right: 3%; 
+  min-height 175px;
+}
+.column-wide{
+  width: 70%; 
+  float : left; 
+  min-height: 225px;
+  padding-left: 90px;
+}
 
-
-
-
+nav{
+  background:#6C757D;
+  margin-bottom:5px;
+/*   margin-top:1%; */
+ 
+}
+.fixed-nav{
+  position: fixed; 
+  left: 0px;
+  right: 0px; 
+  top: 0; 
+}
+.display-nav{
+  text-align: center;
+}
+.display-a{ 
+  padding: 10px;
+  display: inline-block;  
+  width: 15%;
+  font-size: 16px;
+/*   if i use background for nav this color will work here */
+  color: #DEE2E6;
+/*   color:#6C757D; */
+  font-weight: bold;
+  text-decoration: none;
+} 
 
 
 /* Header & Footer 
@@ -60,17 +97,18 @@ header {
   background-color: #F8F9FA;
 }
 .profile-img{
-  width: 300px;
   border-radius:50%;
-  float: left;
-  margin-right: 30px;
+/*   width: 300px; */
+/*   float: left;
+  margin-right: 30px; */
+  padding:0;
 }
 
 footer {
   /*   background-color:#6d6875; */
   /*OR*/
   background-color: #6C757D;
-    text-align: center;
+  text-align: center;
 }
 
 .contact-info a{
@@ -80,6 +118,26 @@ footer {
   display: inline-block;
   font-size: 24px;
   color:#f1faee; 
+}
+.image-bg{
+/*   width: 1500px; */
+  font-family: Helvetica, Arial, sans-serif;
+  line-height: 2.0; 
+/*   background-image: url(https://cdn.glitch.com/fe35fc9e-710d-46b1-a2bf-b95bfa9d1f84%2Fbanner_coe_csce-sd.jpg?v=1601659435464) no-repeat;  */
+  background: linear-gradient(rgba(70,130,180, 0.5),
+                 rgba(70,130,180, 0.5)),
+                 url(https://cdn.glitch.com/fe35fc9e-710d-46b1-a2bf-b95bfa9d1f84%2Fbanner_coe_csce-sd.jpg?v=1601659435464/1400/1200) no-repeat; 
+  
+}
+
+/* .alpha-fbg {
+  width:1600;
+  padding: 30px;
+  height: 100%;
+  /* sets the color with alpha transparency */
+    /*background: rgba(70,130,180, 0.5);  */
+
+  
 }
 
 /* Work Experience
